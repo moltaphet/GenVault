@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------
+# GenVault — root ignore rules (covers the contract toolchain and the frontend)
+# ---------------------------------------------------------------------------
+
+# Python / GenLayer toolchain
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Next.js frontend
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# Environment & secrets
+.env
+.env.local
+.env*.local
+*.key
+*.pem
+
+# GenLayer / GenVM artifacts
+artifacts/
+.genvm/
+*.wasm
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

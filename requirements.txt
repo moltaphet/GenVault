@@ -1,0 +1,7 @@
+# GenVault contract tooling.
+# NOTE: requires Python 3.10-3.12 (the test harness depends on hydra, which
+# does not yet support Python 3.13+).
+
+genvm-linter==0.10.0   # genvm-lint: AST safety + SDK semantic validation + ABI/schema
+genlayer-test==0.29.2  # gltest: direct-mode + integration test harness
+pytest>=8,<10
