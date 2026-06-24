@@ -1,6 +1,7 @@
 "use client";
 
 import { Vault } from "lucide-react";
+import Link from "next/link";
 import { AboutProtocol } from "@/components/AboutProtocol";
 import { AccountOverview } from "@/components/AccountOverview";
 import { CompoundPanel } from "@/components/CompoundPanel";
@@ -36,6 +37,12 @@ export default function HomePage() {
             <span className="h-1.5 w-1.5 rounded-full bg-vault-accent" aria-hidden />
             {activeChainName}
           </Badge>
+          <Link
+            href="/skyshield"
+            className="hidden rounded-full border border-vault-border bg-vault-panel-2 px-3 py-1 text-xs font-medium text-vault-muted transition-colors hover:text-vault-text sm:inline-block"
+          >
+            SkyShield AI
+          </Link>
           <SocialLinks className="hidden sm:flex" />
           <ThemeToggle />
           <WalletConnect />
