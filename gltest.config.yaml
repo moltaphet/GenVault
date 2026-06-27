@@ -1,0 +1,16 @@
+# gltest configuration for GenVault integration tests.
+#
+# Contracts live in contracts/ and build artifacts in artifacts/, which already
+# match gltest's defaults, so only the network selection needs to be declared.
+#
+# studionet (studio.genlayer.com) is gasless and ships a built-in LLM, so the
+# preconfigured auto-generated accounts (0 GEN balance) can deploy and run the
+# full consensus flow — including stake()'s AI risk screen and the live
+# DeFiLlama APY fetch — with no keys, funding, or Docker.
+networks:
+  default: studionet
+  studionet: {}
+
+paths:
+  contracts: contracts
+  artifacts: artifacts

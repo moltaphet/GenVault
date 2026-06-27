@@ -1,6 +1,6 @@
 # { "Depends": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6" }
 """
-GenVault — SmartStakingOptimizer
+GenVault - SmartStakingOptimizer
 ================================
 
 An Intelligent Staking & Yield Optimizer contract for the GenLayer protocol.
@@ -10,14 +10,14 @@ the yield it accrues over time, and re-stakes (compounds) that yield back into
 the principal on demand. All time-dependent math is driven by the deterministic
 consensus clock that the GenVM exposes through ``datetime.datetime.now()`` (the
 block time the leader proposes and every validator agrees on) so all validators
-compute identical results — there is no wall-clock read and no reliance on a
+compute identical results - there is no wall-clock read and no reliance on a
 client-supplied timestamp.
 
 Design notes
 ------------
 * Money is stored in *atto* scale (value * 10**18) using ``u256``. This is the
   cross-chain convention and keeps every arithmetic operation exact integer
-  math — no floats, no rounding drift between validators.
+  math - no floats, no rounding drift between validators.
 * Yield accrues linearly at a configurable APR/APY expressed in basis points
   (``apy_bps``; 100 bps = 1%). Pending yield for an account is:
 
@@ -215,7 +215,7 @@ class SmartStakingOptimizer(gl.Contract):
 
         Inside the GenVM, ``datetime.datetime.now()`` is replaced with the
         block/consensus time proposed by the leader and agreed by every
-        validator — it is NOT a wall-clock read, so it is safe to use directly
+        validator - it is NOT a wall-clock read, so it is safe to use directly
         in state-changing math. ``time.time()`` and friends are forbidden; this
         is the sanctioned time source.
         """
@@ -545,7 +545,7 @@ class SmartStakingOptimizer(gl.Contract):
 
     @gl.public.view
     def get_account(self, staker: str) -> dict:
-        """Full position snapshot for ``staker`` — convenient for the frontend."""
+        """Full position snapshot for ``staker`` - convenient for the frontend."""
         target = Address(staker)
         if target not in self.accounts:
             return {
@@ -573,7 +573,7 @@ class SmartStakingOptimizer(gl.Contract):
 
     @gl.public.view
     def get_stats(self) -> dict:
-        """Protocol-wide statistics — convenient for dashboards."""
+        """Protocol-wide statistics - convenient for dashboards."""
         return {
             "total_staked": int(self.total_staked),
             "staker_count": int(self.staker_count),
