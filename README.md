@@ -31,7 +31,7 @@ timestamp**, the vault needs no off-chain automation to stay correct. Compoundin
 lifts the principal that the next interval is measured against, so positions grow
 **geometrically** rather than linearly.
 
-- **Live contract address:** `0x6C5C3b7E35F65ac58dC0cDc507C29c30696b1404`
+- **Live contract address:** `0x45Df8700b64d6A27A681b6dd6AFecBE821dfaD22`
 
 ## Key capabilities
 
@@ -120,7 +120,7 @@ npm install
 
 # Configure the deployed contract + network
 cp .env.local.example .env.local
-#   NEXT_PUBLIC_CONTRACT_ADDRESS=0x6C5C3b7E35F65ac58dC0cDc507C29c30696b1404
+#   NEXT_PUBLIC_CONTRACT_ADDRESS=0x45Df8700b64d6A27A681b6dd6AFecBE821dfaD22
 #   NEXT_PUBLIC_GENLAYER_CHAIN=studionet   # studionet | localnet | testnetAsimov | testnetBradbury
 
 npm run dev      # http://localhost:3000

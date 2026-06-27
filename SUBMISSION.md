@@ -4,7 +4,7 @@
 
 > Stake once. Yield accrues from the consensus block clock and compounds geometrically — fully on-chain, with zero external keepers, bots, or oracles.
 
-- **Live contract:** `SmartStakingOptimizer` @ `0x6C5C3b7E35F65ac58dC0cDc507C29c30696b1404`
+- **Live contract:** `SmartStakingOptimizer` @ `0x45Df8700b64d6A27A681b6dd6AFecBE821dfaD22`
 - **Network:** GenLayer (studionet)
 - **Live demo:** `<VERCEL_URL_PLACEHOLDER>`
 - **Repository:** `https://github.com/moltaphet/GenVault`
@@ -152,7 +152,7 @@ owner/pause access controls).
 
 - **Live Demo (Vercel):** `<VERCEL_URL_PLACEHOLDER>`
 - **GitHub Repository:** [github.com/moltaphet/GenVault](https://github.com/moltaphet/GenVault)
-- **Deployed Contract:** `0x6C5C3b7E35F65ac58dC0cDc507C29c30696b1404`
+- **Deployed Contract:** `0x45Df8700b64d6A27A681b6dd6AFecBE821dfaD22`
 
 ---
 
