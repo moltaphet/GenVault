@@ -97,6 +97,13 @@
       "ret": "null",
       "payable": false
     },
+    "update_apy_from_market": {
+      "params": [],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    },
     "set_paused": {
       "params": [
         [

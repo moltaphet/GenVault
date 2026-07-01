@@ -115,3 +115,8 @@ export function withdraw(client: GenLayerClient, amountAtto: bigint, status?: Wa
 export function withdrawMax(client: GenLayerClient, status?: WaitStatus) {
   return write(client, "withdraw_max", [], status);
 }
+
+/** Refresh the protocol APY from the live market feed via consensus (owner-only). */
+export function updateApyFromMarket(client: GenLayerClient, status?: WaitStatus) {
+  return write(client, "update_apy_from_market", [], status);
+}
